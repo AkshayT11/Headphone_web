@@ -1,0 +1,96 @@
+
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 158, 104);
+    color: #fff;
+    padding-inline: 2rem;
+   
+
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+    
+}
+
+
+nav .logo h1{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    padding: 0px 15px;
+   font-size: 1.2rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.menu{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+/* Responsive design  */
+
+@media screen and (max-width:780px){
+
+    nav{
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        align-items: center;
+        background-color: rgb(34, 158, 104);
+        color: #fff;
+    
+    }
+    .nav_main{
+        overflow: hidden;
+    }
+       
+    
+
+    nav .logo h1{
+        font-size: 2rem;
+    }
+    .nav-links{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+
+    .nav-link-mobile{
+        display: block;
+        position: absolute;
+        list-style: none;
+        background-color: rgb(44, 205, 159);
+        left: 0;
+        top: 80px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+    nav ul li{
+        color: #fff;
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 25px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+}
+
