@@ -1,6 +1,6 @@
 
 .home{
-    height: 70vh;
+    /* height: 70vh; */
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -8,6 +8,7 @@
     align-items: center;
     padding: 10px 20px;
     margin: 130px 0px;
+
 }
 
 .content{
@@ -59,7 +60,7 @@
 
 @media screen and (max-width:1180px){
     .home{
-        height: 70vh;
+        min-height: 100vh;
         width: 100%;    
         display: flex;
         flex-direction: column-reverse;
@@ -99,13 +100,13 @@
 
 @media screen and (max-width:480px){
     .home{
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;    
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
         align-items: center;
-        margin: 120px 0px;
+        margin-bottom: 40px;
     } 
     .content{
         width: 100%;

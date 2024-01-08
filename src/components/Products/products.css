@@ -1,6 +1,6 @@
 .products_main{
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
     
 }
 
@@ -69,8 +69,9 @@
 @media screen and (max-width:1180px){
     .products_main{
         width: 100%;
-        height: 250vh;
-       padding-top: 70px;
+        /* height: 250vh; */
+        min-height: 100vh;
+       padding-top: 20px;
         
     }
     
@@ -102,7 +103,7 @@
 @media screen and (max-width:780px){
     .products_main{
         width: 100%;
-        height: 150vh;
+        min-height: 100vh;
        padding-top: 10px; 
     }
     
@@ -138,7 +139,7 @@
 @media screen and (max-width:480px){
     .products_main{
         width: 100%;
-        height: 225vh;
+        min-height: 100vh;
        padding-top: 10px; 
     }
     
