@@ -8,10 +8,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { decrementQty, incrementQty, removeFromCart } from "../../redux/slices/CartSlice";
 
 
-const CartPage = () => {
+const CartPage = ({activeCart,setActiveCart}) => {
    const dispatch = useDispatch();
 
-    const [activeCart, setActiveCart] = useState(false);
+    
 
     const cartItems = useSelector((state)=> state.cart.cart)
     console.log(cartItems);
@@ -60,7 +60,7 @@ const CartPage = () => {
                 </div>
               </div>
             )
-         } ): <h2>The Cart is Empty</h2>  }
+         } ): <h2 id="emptyCart">The Cart is Empty</h2>  }
 
         
 

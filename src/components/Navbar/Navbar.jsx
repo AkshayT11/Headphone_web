@@ -3,13 +3,26 @@ import "./navbar.css"
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { BsCart } from "react-icons/bs";
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleCart } from '../../redux/slices/CartSlice';
 
 
 
 
 
-const Navbar = () => {
+const Navbar = ({activeCart, setActiveCart}) => {
     const [isMobile, setIsMobile] = useState(false)
+
+  const cartItems = useSelector((state)=> state.cart.cart )  
+
+  const cartQty = cartItems.reduce((acc,item)=> acc + item.qty,0)
+  
+  
+
+    const handleOpencart = (open)=> {
+      setActiveCart(!activeCart)
+      
+    }
 
   return (
     <div className='nav_main'>
@@ -60,7 +73,8 @@ const Navbar = () => {
             </div>
             {/* Cart Icon */}
             <div className='cart' >
-            <BsCart />
+            <BsCart onClick={()=> handleOpencart(true)} />
+            <span className='cartTotal'>{cartQty} </span>
             </div>
         </nav>
     </div>

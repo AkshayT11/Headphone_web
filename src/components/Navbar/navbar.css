@@ -49,6 +49,22 @@ nav ul li a{
     cursor: pointer;
 }
 
+.cartTotal{
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 60px;
+
+    font-size: 1.2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    padding: 2px;
+
+}
+
 
 
 /* Responsive design  */
@@ -82,6 +98,7 @@ nav ul li a{
     .menu{
         display: block;
     }
+
 
 
     .nav-link-mobile{

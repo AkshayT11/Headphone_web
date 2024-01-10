@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./App.css"
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
@@ -9,9 +9,11 @@ import Footer from './components/Footer/Footer'
 import CartPage from './components/CartPage/CartPage'
 
 const App = () => {
+
+  const [activeCart, setActiveCart] = useState(true);
   return (
     <div>
-      <Navbar/>
+      <Navbar activeCart={activeCart} setActiveCart={setActiveCart} />
       <main>
         <div id="Home">
         <Home/>
@@ -34,7 +36,7 @@ const App = () => {
         </div>  
 
       </main>
-        <CartPage/>
+        <CartPage activeCart={activeCart} setActiveCart={setActiveCart} />
      
     </div>
   )
