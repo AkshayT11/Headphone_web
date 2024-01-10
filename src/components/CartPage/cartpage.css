@@ -3,10 +3,41 @@
     /* height: 100%; */
     min-height: 130vh;
     width: 20vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 50;
+   
+    
+}
+
+.AcartMain{
+    background-color: white;
+    /* height: 100%; */
+    min-height: 130vh;
+    width: 20vw;
     position: absolute;
     top: 0;
     right: 0;
     transition: all 0.4s ease-in-out;
+    
+    transform:translateX(0); 
+}
+
+.toggleCart{
+    /* transform: translateX(200px);
+    transition: all 0.4s ease-in-out; */
+    /* height: 100%; */
+    background-color: white;
+    min-height: 130vh;
+    width: 20vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 0.4s ease-in-out; 
+
+    transform:translateX(100%); 
 }
 
 .cart_close{
@@ -65,6 +96,7 @@
 
 .itemCard{
     display: flex;
+
     width: 100%;
     gap: 20px;
     align-items: center;
@@ -116,20 +148,24 @@ right: 30px;
 
 }
 
-.toggleCart{
-    transform: translateX(200px);
-    transition: all 0.4s ease-in-out;
-}
+
 
 @media screen and (max-width:1280px){
-    .cartMain{
-        width: 40%;
+    .AcartMain{
+        width: 30%;
         height: 100%;
         
     }
+    .toggleCart{
+        /* transform: translateX(200px);
+        transition: all 0.4s ease-in-out; */
+        /* height: 100%; */
+        
+        width: 40vw;
+    }
 }
 @media screen and (max-width:786px){
-    .cartMain{
+    .AcartMain{
         width: 100%;
         height: 100%;
         

@@ -20,12 +20,12 @@ const CartPage = ({activeCart,setActiveCart}) => {
     const totalQty = cartItems.reduce((acc, item)=> acc + item.qty, 0 )
 
     // Total Price
-    const totalPrice = cartItems.reduce((acc, item)=> acc + item.qty * item.price, 0 )
+    const totalPrice = cartItems.reduce((acc, item)=> acc + item.qty * item.price, 0 )  
 
   
 
   return (
-    <div className={ activeCart ? "cartMain" : "toggleCart"}>
+    <div className= {` "cartMain" ${activeCart ? "AcartMain" : "toggleCart"}`}>
       <div className="cartPage">
         <div className="cartHeader">
           <h2>My Order</h2>

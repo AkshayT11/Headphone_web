@@ -10,7 +10,7 @@ import CartPage from './components/CartPage/CartPage'
 
 const App = () => {
 
-  const [activeCart, setActiveCart] = useState(true);
+  const [activeCart, setActiveCart] = useState(false);
   return (
     <div>
       <Navbar activeCart={activeCart} setActiveCart={setActiveCart} />
@@ -35,8 +35,9 @@ const App = () => {
         <Footer/>
         </div>  
 
+        
+      <CartPage activeCart={activeCart} setActiveCart={setActiveCart} />
       </main>
-        <CartPage activeCart={activeCart} setActiveCart={setActiveCart} />
      
     </div>
   )
