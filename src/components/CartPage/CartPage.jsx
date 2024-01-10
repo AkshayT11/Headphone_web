@@ -11,7 +11,7 @@ import { decrementQty, incrementQty, removeFromCart } from "../../redux/slices/C
 const CartPage = () => {
    const dispatch = useDispatch();
 
-    const [activeCart, setActiveCart] = useState(true);
+    const [activeCart, setActiveCart] = useState(false);
 
     const cartItems = useSelector((state)=> state.cart.cart)
     console.log(cartItems);
