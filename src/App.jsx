@@ -12,7 +12,7 @@ const App = () => {
 
   const [activeCart, setActiveCart] = useState(false);
   return (
-    <div>
+    <div className='main'>
       <Navbar activeCart={activeCart} setActiveCart={setActiveCart} />
       <main>
         <div id="Home">
